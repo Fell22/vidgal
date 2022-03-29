@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/main.css">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id="top">
+		<img src="/images/logo.png">
+		<h2>Silent Planet</h2>
+		<h3>Video Gallery</h3>
+		
+	</header>
+
+	<nav id="nav_list">
+		<ul>
+			<li><a href="#vid1">Panic Room</a></li>
+			<li><a href="#vid2">Depths II</a></li>
+			<li><a href="#vid3">Panic Room Analysis</a></li>
+			<li><a href="#vid4">Foundry Club Concert</a></li>
+			<li><a href="#vid5">Tiny Hands</a></li>
+			<!-- <li><a href="#top">Return To Top</a></li> -->
+		</ul>
+	</nav>
+
+	<main>
+		
+		<section>
+		<article id="vid1">
+			<h4>Panic Room</h4>
+		<div class="videowrapper">
+			<iframe src="https://www.youtube.com/embed/VbaFJiWftwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</article>
+	<article id="vid2">
+		<h4>Depths II</h4>
+		<div class="videowrapper">
+			<iframe src="https://www.youtube.com/embed/H-rv856K0W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</article>
+	
+	<article id="vid3">
+		<h4>Panic Room Analysis</h4>
+		<div class="videowrapper">
+			<iframe src="https://www.youtube.com/embed/-fbK49IA2Is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</article>
+	<article id="vid4">
+		<div class="videowrapper">
+			<iframe src="https://www.youtube.com/embed/hCtLvYUI3LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</article>
+	<article id="vid5">
+		<div class="videowrapper">
+			<iframe src="https://www.youtube.com/embed/a9mCPOCVegs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</article>
+</section>
+<div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+
+<script>
+	// When the user scrolls down 800px from the top of the document, show the button
+	 window.onscroll = function() {scrollFunction()};
+ 
+	 function scrollFunction() {
+	   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+		 document.getElementById("cornerBtn").style.display = "block";
+	   } else {
+		 document.getElementById("cornerBtn").style.display = "none";
+	   }
+	 }
+ 
+	 // When the user clicks on the button, scroll to the top of the document
+	 function topFunction() {
+	   document.body.scrollTop = 0;
+	   document.documentElement.scrollTop = 0;
+	 }
+ </script>
+	</main>
+
+	<footer>
+		<p>&copy Carson Bischoff </p>
+
+	</footer>
+</body>
+</html>
